@@ -1,0 +1,47 @@
+<Html>
+<Head><Title>Inicio Sesion</Title></Head>
+<Body>
+<Script language="JavaScript">
+<!--
+
+Confirmado=false;
+
+function CambiaBoton(){
+  var MiTexto= miform.MiBoton.createTextRange();
+ 
+ if (!Confirmado){
+  MiTexto.text="Confirmación de Envío";
+  Confirmado=true;
+  }
+ else{
+  Confirmado=false; //no necesario
+  miform.submit();
+  }
+  return true;
+ }
+
+//-->
+</Script>
+
+<CENTER>
+ <FORM Name="miform">
+  <Font size=2>
+ <TABLE>
+  <TR> 
+   <TD><B>Usuario:</B></TD>
+   <TD><INPUT Type="Text" Name="Usuario:" Size=15 MaxLength=10></TD></TR>
+   <TR>
+   <TD><B>Contraseña:</B></TD>
+   <TD><INPUT Type="password" Name="Contraseña:" Size=15 MaxLength=10></TD></TR>
+</TD></TR>
+  <TR></TR>Inicio Sesion
+  <TR><TD colspan=4><Center>
+  <Button Id="MiBoton" Style="font-family:Arial;font-size:25;color:black;" onClick="CambiaBoton();">
+    <I>INICIAR</I>
+  </Button></Center>
+  </TD></TR>
+  </TABLE>
+</FORM>
+</CENTER>
+</Body>
+</Html>

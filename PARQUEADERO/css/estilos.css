@@ -1,0 +1,33 @@
+body{
+	background: #E2E0E0;
+}
+.titulo{
+	display: block;
+	width: 100%;
+}
+.contenedor-interno{
+	margin: 2em auto;
+}
+a.link{
+	display: block;
+	margin-bottom: 2em;
+}
+/*Owl Carousel*/
+.owl-carousel{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.owl-carousel .item{
+	background: linear-gradient(#69C86B,#82D584,#A0D5A1);
+	min-height: 20vh;
+}
+.owl-carousel .item h4{
+	background: rgba(255,255,255,.5);
+	margin: 0;
+	padding: 5px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+}
